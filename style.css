@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,11 +10,15 @@
     --azul-claro: #A3CEF1;
     --azul-medio: #6096BA;
     --cinza: #E7ECEF;
+    --preto: #000000;
+    --vermelho: #d62828;
+    --fonte-texto:  "Dancing Script", cursive;
+    --fonte-titulo: "Satisfy", cursive;
 }
 
 .cabecalho{
-    background-color: #231a5b;
-    color: white;
+    background-color: var(--azul-escuro);
+    color: var(--azul-claro);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,24 +33,26 @@
 
 .cabecalho-lista-link{
     text-decoration: none;
-    color: white;
+    color: var(--cinza);
     margin-right: 1.5em;
     font-size: 1.5em;
 }
 
 .escola{
-    background-color: white;
-    color: black;
+    background-color: var(--cinza);
+    color: var(--azul-escuro);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px 0;
+    padding: 5px 0;
+    font-family: var(--fonte-texto);
 }
 
 .escola-texto-titulo{
-    padding: 24px 0;
+    padding: 12px 0;
+    font-family: var(--fonte-titulo);
 }
 
 .escola-imagem{
-    width: 300%;
+    width: 150%;
 }
